@@ -12,7 +12,7 @@ public class 응용문제 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("년도 출력: ");
 		int y = 2023;
-		System.out.println((y % 4) && (y % 100 != 0) || (y % 400 == 0) ? y + "윤년이다" : y + "윤년 아님");
+		//System.out.println((y % 4) && (y % 100 != 0) || (y % 400 == 0) ? y + "윤년이다" : y + "윤년 아님");
 	}
 
 
