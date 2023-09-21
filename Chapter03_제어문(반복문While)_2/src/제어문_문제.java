@@ -44,21 +44,30 @@ public class 제어문_문제 {
 		System.out.println();
 		
 		//12번
-		Scanner sc = new Scanner(System.in);
-		int a = 0;
-		int a3=0,a5=0;
-		for(int i =1; i <=10; i++) {
-			System.out.println("정수 입력: ");
-			a = sc.nextInt();
-			if(a%3==0) {
-				a3++;
-			}
-			if(a%5==0) {
-				a5++;
-			}
-		}System.out.println("3의 배수: "+a3);
-		System.out.println("5의 배수: "+a5);
+//		Scanner sc = new Scanner(System.in);
+//		int a = 0;
+//		int a3=0,a5=0;
+//		for(int i =1; i <=10; i++) {
+//			System.out.println("정수 입력: ");
+//			a = sc.nextInt();
+//			if(a%3==0) {
+//				a3++;
+//			}
+//			if(a%5==0) {
+//				a5++;
+//			}
+//		}System.out.println("3의 배수: "+a3);
+//		System.out.println("5의 배수: "+a5);
 		
+		for(int i = 1; i<=4; i++) {
+			for(int j= 1; j<=i; j++) {
+				System.out.print("*");
+			}
+			for(int k= 1; k<= 5-i; k++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
 	}
 
 }
