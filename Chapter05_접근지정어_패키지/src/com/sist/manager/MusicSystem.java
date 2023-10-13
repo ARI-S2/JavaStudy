@@ -104,9 +104,10 @@ public class MusicSystem {
       // 1. 예외처리 => io(파일,메모리,네트워크) => 프로그램의 정상 종료
 	  // <table class="list-wrap">
 	   try
-	   {
+	   {   //주소의 html 가져옴
 		   Document doc=Jsoup.connect("https://www.genie.co.kr/chart/top200").get();
-		   // HTML읽기
+		   
+		   //태그 담을 자료형 (태그여러개라 s붙어야함)
 		   Elements title=doc.select("table.list-wrap td.info a.title");
 		   System.out.println(title);
 		   Elements singer=doc.select("table.list-wrap td.info a.artist");
