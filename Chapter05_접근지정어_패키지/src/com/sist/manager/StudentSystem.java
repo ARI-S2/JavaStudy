@@ -39,6 +39,8 @@ public class StudentSystem {
 			
 			System.out.println("수학 입력:");
 			students[i].math=scan.nextInt();
+			
+
 		}
 	}
 }
