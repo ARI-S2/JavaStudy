@@ -65,7 +65,6 @@ interface B //extends A
 }
 class C implements B,A
 {
-
 	@Override
 	public void aaa() {
 		// TODO Auto-generated method stub
