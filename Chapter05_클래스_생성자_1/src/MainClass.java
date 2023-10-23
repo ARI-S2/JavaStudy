@@ -310,16 +310,16 @@ class Sawon{
 		loc="서울";
 	}
 	// 매개변수 생성자 
-	Sawon(int s,String name,String dept,
-			  String job,String loc)
+	Sawon(int s,String nam,String dep,
+			  String jo,String lo)
 	{
 		// 지역변수 우선 순위 
 		System.out.println("this="+this);
 		sabun=s;
-		this.name=name; // this는 클래스 자신의 객체명 
-		this.dept=dept;
-		this.job=job;
-		this.loc=loc;
+		name=nam; // this는 클래스 자신의 객체명 
+		dept=dep;
+		job=jo;
+		loc=lo;
 		a=100;
 	}
 }
@@ -327,19 +327,21 @@ public class MainClass {
     //MainClass(){}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        Sawon sa=new Sawon();
-        System.out.println("사번:"+sa.sabun);
-        System.out.println("이름:"+sa.name);
-        
-        Sawon sa1=new Sawon();
-        System.out.println("사번:"+sa1.sabun);
-        System.out.println("이름:"+sa1.name);
+//        Sawon sa=new Sawon();
+//        System.out.println("사번:"+sa.sabun);
+//        System.out.println("이름:"+sa.name);
+//        
+//        Sawon sa1=new Sawon();
+//        System.out.println("사번:"+sa1.sabun);
+//        System.out.println("이름:"+sa1.name);
         
         Sawon sa2=new Sawon(2,"박문수","영업부","과장","경기");
         System.out.println("sa2="+sa2);
         System.out.println("사번:"+sa2.sabun);//0
         System.out.println("이름:"+sa2.name);
         System.out.println("부서:"+sa2.dept);
+        System.out.println("부서:"+sa2.job);
+        System.out.println("부서:"+sa2.loc);
         /*
          *    Sawon s=new Sawon();
          *         --- 메모리 주소 => 주소를 활용(참조변수)
